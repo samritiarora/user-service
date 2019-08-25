@@ -1,0 +1,6 @@
+FROM openjdk:jre
+
+EXPOSE 8080
+ADD target/nagp-user-1.0-SNAPSHOT.jar /
+
+ENTRYPOINT ["java", "-jar", "/nagp-user-1.0-SNAPSHOT.jar"]
